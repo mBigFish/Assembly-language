@@ -25,7 +25,7 @@ code segment
 ;-----------------------------
 	s:
 		mov al, ds:[bx]
-		and al, 11011111b
+		and al, 11011111B
 		mov ds:[bx], al
 		inc bx
 		loop s
