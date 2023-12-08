@@ -30,6 +30,10 @@ code segment
 		inc bx
 		loop s
 
+	lea dx,str		
+	mov ah,9
+	int 21H
+
 	mov al, 4cH
 	int 21h
 code ends
