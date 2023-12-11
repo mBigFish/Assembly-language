@@ -6,7 +6,8 @@ data segment
 data ends
 
 stack segment
-    db 128 dup(0)
+    dw 128 dup(0)
+    ;db 128 dup(0)
 stack ends
 
 code segment
