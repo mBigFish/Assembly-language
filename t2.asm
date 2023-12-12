@@ -12,9 +12,13 @@ codesg SEgment
 	
 	mov bx,0
 	mov cx,11
+	mov ah,0
 	s:
 		mov al,[bx]
-		and al,1011111B
+		cmp ah,al
+		jnb s1
+		mov ah,al
+	s1:
 		mov [bx],al
 		inc bx
 		loop s
@@ -28,11 +32,5 @@ codesg SEgment
 		int 21H
 codesg ends
 end start
-
-
-
-
-
-
 
 
