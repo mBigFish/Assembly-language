@@ -12,10 +12,10 @@ code segment
     start:
         mov ax, data
         mov ds, ax
-        mov cx, 9
+        mov cx, 8
         f1:
             mov dx, cx
-            sub cx, 1
+            ;sub cx, 1
             mov bx, 0
             f2:
                 mov al, arr[bx]
